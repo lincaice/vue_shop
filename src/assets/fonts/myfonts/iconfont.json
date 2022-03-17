@@ -1,0 +1,16 @@
+{
+  "id": "3249688",
+  "name": "shop_heima",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15493388",
+      "name": "折叠",
+      "font_class": "zhedie",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    }
+  ]
+}
