@@ -119,22 +119,6 @@
                   size="small"
                   @click="showInput(scope.row)"
                 >+ New Tag</el-button>
-                <!-- 输入的文本框 -->
-                <!-- <el-input
-                  class="input-new-tag"
-                  v-if="scope.row.inputVisible"
-                  v-model="scope.row.inputValue"
-                  ref="saveTagInput"
-                  size="small"
-                  @keyup.enter.native="handleInputConfirm"
-                  @blur="handleInputConfirm"
-                ></el-input>
-                <el-button
-                  v-else
-                  class="button-new-tag"
-                  size="small"
-                  @click="showInput(scope.row)"
-                >+ New Tag</el-button>-->
               </template>
             </el-table-column>
             <el-table-column type="index"></el-table-column>
