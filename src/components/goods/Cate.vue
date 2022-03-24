@@ -26,7 +26,11 @@
       >
         <!-- 是否有效 -->
         <template slot="isok" slot-scope="scope">
-          <i class="el-icon-success" style="color: lightgreen" v-if="scope.row.cat_deleted === false"></i>
+          <i
+            class="el-icon-success"
+            style="color: lightgreen"
+            v-if="scope.row.cat_deleted === false"
+          ></i>
           <i class="el-icon-error" style="color: red" v-else></i>
         </template>
         <!-- 排序 -->
@@ -51,9 +55,21 @@
         :total="total"
       ></el-pagination>
       <!-- 添加角色视图 -->
-      <el-dialog title="添加分类" :visible.sync="addCateDialogVisible" width="30%" @close="addCateClose">
+      <el-dialog
+        title="添加分类"
+        :visible.sync="addCateDialogVisible"
+        width="30%"
+        @close="addCateClose"
+      >
         <!-- 主体区域 -->
-        <el-form ref="addCateFormRef" :model="addCateForm" :rules="addCateFormRules" label-width="90px" status-icon status>
+        <el-form
+          ref="addCateFormRef"
+          :model="addCateForm"
+          :rules="addCateFormRules"
+          label-width="90px"
+          status-icon
+          status
+        >
           <el-form-item label="分类名称" prop="cat_name">
             <el-input v-model="addCateForm.cat_name"></el-input>
           </el-form-item>
@@ -146,10 +162,7 @@ export default {
         children: 'children'
       },
       // 选中父级分类id数组
-      selectedKeys: [],
-
-
-
+      selectedKeys: []
     };
   },
   methods: {
@@ -226,8 +239,7 @@ export default {
         this.addCateForm.cat_pid = 0;
         this.addCateForm.cat_level = 0;
       }
-    },
-    
+    }
   },
   mounted() {
     this.getCateList();
